@@ -4,19 +4,27 @@ on:
   issues:
     types:
       - opened
-      - edited
 
 jobs:
   process_issue:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
       - name: Get Issue Body
         id: issue_body
         run: echo "::set-output name=body::${{ github.event.issue.body }}"
 
-      - name: Perform actions on issue
-        run: |
-          echo "Issue event occurred!"
-          echo "Issue body: ${{ steps.issue_body.outputs.body }}"
-          # Add your custom actions or commands here
+      - name: Update Users List
+        run: node update-users.js ${{ steps.issue_body.outputs.body }}
+        env:
+          EVENT_RAW: ${{ steps.issue_body.outputs.body }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+
+      - name: Close initial issue
+        run: gh issue close --comment "Auto-closing issue" ${{ github.event.issue.id }}
