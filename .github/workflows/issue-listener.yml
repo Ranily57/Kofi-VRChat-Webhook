@@ -20,7 +20,7 @@ jobs:
       - name: Update Users List
         run: node update-users.js ${{ steps.issue_body.outputs.body }}
         env:
-          EVENT_RAW: ${{ steps.issue_body.outputs.body }}
+          EVENT_RAW: ${{ github.event.issue.body }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Commit and push changes
@@ -28,3 +28,5 @@ jobs:
 
       - name: Close initial issue
         run: gh issue close --comment "Auto-closing issue" ${{ github.event.issue.id }}
+        env:
+          GH_TOKEN: ${{ github.token }}
