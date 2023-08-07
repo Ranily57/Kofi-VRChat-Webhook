@@ -1,33 +1,27 @@
-# 📁 README
+Crée par [Spokeek](https://github.com/Alexandre-Belhomme) et [Ranily](https://github.com/Ranily57)!
 
-## Scripts
+# 📁 Bienvenue dans notre projet !
+
+## À propos
+
+Ce projet comprend deux fichiers importants : `Event.js` et une action Github. Jettons un coup d'œil à ce que fait chaque élément :
 
 ### Event.js
 
-This script (`Event.js`) processes event data and updates a list of users and their corresponding donation or subscription amounts. It performs the following tasks:
-
-- Extracts content from the first argument passed to the script.
-- Parses the content as JSON after removing any newline characters.
-- Reads the existing list of users and amounts from `vrchat-kofi-users.txt`.
-- Determines the type of the event (either "Subscription" or "Donation").
-- Formats the amount based on the event type.
-- Adds a new user or updates the amount for an existing user in the user list.
-- Writes the updated user list back to `vrchat-kofi-users.txt`.
+Le fichier `Event.js` est responsable de la gestion des événements. Il traite les informations liées aux dons et abonnements reçus par notre service. Plus précisément, il prend les données de l'événement, telles que le nom de l'utilisateur et le montant donné, et les ajoute à une liste contenant les noms des utilisateurs et le montant total qu'ils ont donné jusqu'à présent.
 
 ### Github Action
 
-This Github Action listens for new issues being opened and triggers the `process_issue` job. The workflow is as follows:
+Nous avons également inclus une Github Action, un petit programme qui surveille les problèmes (issues) ouverts dans notre projet. Lorsqu'un nouvel issue est ouvert, l'action déclenche le script `Event.js` pour mettre à jour notre liste d'utilisateurs et de montants en fonction des informations fournies dans l'issue.
 
-1. **Checkout code**: The action checks out the code repository to access the required files.
+## Comment cela fonctionne-t-il ?
 
-2. **Get Issue Body**: The action fetches the body of the opened issue and stores it in the `issue_body` variable.
+Lorsqu'un nouvel événement est détecté (don ou abonnement), nous enregistrons le nom de l'utilisateur et le montant associé dans notre liste. Si l'utilisateur existe déjà dans la liste, nous mettons simplement à jour le montant total pour refléter le nouveau don ou abonnement.
 
-3. **Update Users List**: The action executes the `Event.js` script using Node.js, passing the issue body as an argument and setting it as the `EVENT_RAW` environment variable. The script processes the event data and updates the user list.
+Nous avons tout automatisé grâce à Github Actions, ce qui signifie que le processus se déroule de manière transparente sans nécessiter d'intervention manuelle.
 
-4. **Commit and push changes**: The action automatically commits any changes made to `vrchat-kofi-users.txt` during the previous step and pushes the changes back to the repository.
+## Comment participer ?
 
-5. **Close initial issue**: The action closes the initial issue with a comment indicating that it was automatically closed.
+Nous serions ravis de vous avoir à bord pour contribuer à notre projet ! Vous pouvez ouvrir de nouveaux problèmes (issues) si vous avez des suggestions, des idées ou si vous rencontrez des problèmes que vous aimeriez signaler. Vous pouvez également proposer des modifications, des améliorations ou envoyer des demandes d'extraction (pull requests) pour ajouter de nouvelles fonctionnalités.
 
-## ℹ️ Note
-
-Make sure to provide necessary permissions for the Github Action to write to issues and contents.
+N'hésitez pas à partager vos commentaires et vos questions. Votre contribution est précieuse pour faire avancer notre projet !
