@@ -1,0 +1,22 @@
+name: Issue Listener
+
+on:
+  issues:
+    types:
+      - opened
+      - edited
+
+jobs:
+  process_issue:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get Issue Body
+        id: issue_body
+        run: echo "::set-output name=body::${{ github.event.issue.body }}"
+
+      - name: Perform actions on issue
+        run: |
+          echo "Issue event occurred!"
+          echo "Issue body: ${{ steps.issue_body.outputs.body }}"
+          # Add your custom actions or commands here
