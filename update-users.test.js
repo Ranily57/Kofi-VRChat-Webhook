@@ -31,7 +31,7 @@ const EXPECT_EVENT_2 = [
 // A new user makes a 10€ subscription
 const EVENT_3 = {
     "name": "user_test_2",
-    "amount": "1",
+    "amount": "10",
     "type": "Subscription"
 }
 const EXPECT_EVENT_3 = [
