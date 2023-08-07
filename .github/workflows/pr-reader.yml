@@ -1,0 +1,16 @@
+name: Pull Request Listener
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  process_pull_request:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Perform actions on pull request
+        run: |
+          echo "Pull request opened!"
+          echo "Content: ${{ github.event.pull_request.body }}"
