@@ -2,6 +2,11 @@
 
 A automation system to receive donations and subscriptions from Ko-Fi and update a list of users and their contributions on VRChat.
 
+You'll need to have those with you if you want to use this workflow: 
+- An activate and fully functionnal Ko-Fi Account
+- An account on Zappier, please refer to the Zappier Button on the API section of Ko-Fi in your account settings
+- A public repository on Github for the text update
+
 ## Authors
 
 Created by [Spokeek](https://github.com/Alexandre-Belhomme) and [Ranily](https://github.com/Ranily57)!
