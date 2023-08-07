@@ -25,7 +25,6 @@ jobs:
         run: node update-users.js ${{ steps.issue_body.outputs.body }}
         env:
           EVENT_RAW: ${{ github.event.issue.body }}
-          GITHUB_TOKEN: ${{  }}
       
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
