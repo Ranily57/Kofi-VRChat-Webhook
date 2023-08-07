@@ -1,0 +1,254 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
+  m_Name: Cube Udon Graph Program Asset 1
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 479ff07db38df754ea02d317e5642c27,
+    type: 2}
+  udonAssembly: ".data_start\r\n\r\n    .export Url\r\n    .export text\r\n    \r\n   
+    __url_0: %VRCSDKBaseVRCUrl, null\r\n    __udonBehaviour_0: %VRCUdonUdonBehaviour,
+    this\r\n    __message_0: %SystemObject, null\r\n    __String_0: %SystemString,
+    null\r\n    __String_1: %SystemString, null\r\n    __String_2: %SystemString,
+    null\r\n    __String_3: %SystemString, null\r\n    __instance_0: %VRCSDK3StringLoadingIVRCStringDownload,
+    null\r\n    onStringLoadErrorIVRCStringDownload: %VRCSDK3StringLoadingIVRCStringDownload,
+    null\r\n    __value_0: %SystemInt32, null\r\n    __instance_1: %VRCSDK3StringLoadingIVRCStringDownload,
+    null\r\n    __instance_2: %TMProTextMeshProUGUI, null\r\n    __value_1: %SystemString,
+    null\r\n    __instance_3: %VRCSDK3StringLoadingIVRCStringDownload, null\r\n   
+    onStringLoadSuccessIVRCStringDownload: %VRCSDK3StringLoadingIVRCStringDownload,
+    null\r\n    Url: %VRCSDKBaseVRCUrl, null\r\n    text: %TMProTextMeshProUGUI,
+    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _start\r\n    \r\n   
+    _start:\r\n    \r\n        PUSH, Url\r\n        PUSH, __url_0\r\n        COPY\r\n       
+    PUSH, __url_0\r\n        PUSH, __udonBehaviour_0\r\n        EXTERN, \"VRCSDK3StringLoadingVRCStringDownloader.__LoadUrl__VRCSDKBaseVRCUrl_VRCUdonCommonInterfacesIUdonEventReceiver__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onStringLoadError\r\n    \r\n    _onStringLoadError:\r\n   
+    \r\n        PUSH, onStringLoadErrorIVRCStringDownload\r\n        PUSH, __instance_0\r\n       
+    COPY\r\n        PUSH, __instance_0\r\n        PUSH, __String_2\r\n        EXTERN,
+    \"VRCSDK3StringLoadingIVRCStringDownload.__get_Error__SystemString\"\r\n       
+    PUSH, __String_2\r\n        PUSH, __String_3\r\n        PUSH, __String_0\r\n       
+    EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n       
+    PUSH, onStringLoadErrorIVRCStringDownload\r\n        PUSH, __instance_1\r\n       
+    COPY\r\n        PUSH, __instance_1\r\n        PUSH, __value_0\r\n        EXTERN,
+    \"VRCSDK3StringLoadingIVRCStringDownload.__get_ErrorCode__SystemInt32\"\r\n       
+    PUSH, __value_0\r\n        PUSH, __String_1\r\n        EXTERN, \"SystemConvert.__ToString__SystemInt32__SystemString\"\r\n       
+    PUSH, __String_0\r\n        PUSH, __String_1\r\n        PUSH, __message_0\r\n       
+    EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n       
+    PUSH, __message_0\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onStringLoadSuccess\r\n    \r\n    _onStringLoadSuccess:\r\n   
+    \r\n        PUSH, text\r\n        PUSH, __instance_2\r\n        COPY\r\n       
+    PUSH, onStringLoadSuccessIVRCStringDownload\r\n        PUSH, __instance_3\r\n       
+    COPY\r\n        PUSH, __instance_3\r\n        PUSH, __value_1\r\n        EXTERN,
+    \"VRCSDK3StringLoadingIVRCStringDownload.__get_Result__SystemString\"\r\n       
+    PUSH, __instance_2\r\n        PUSH, __value_1\r\n        EXTERN, \"TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+  assemblyError: 
+  graphData:
+    name: 
+    description: 
+    nodes:
+    - fullName: Variable_VRCSDKBaseVRCUrl
+      uid: e8669caa-607f-4e16-b5b5-be94132f1674
+      position: {x: -617.749, y: -238.03183}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Url
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Variable_TMProTextMeshProUGUI
+      uid: 68692663-728a-4267-819b-e56b6db7cd27
+      position: {x: -617.749, y: -238.03183}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|text
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Event_Start
+      uid: 7ed699ff-56ff-46e4-87c8-a745f653ee16
+      position: {x: 121.2828, y: -232.93634}
+      nodeUIDs: []
+      flowUIDs:
+      - caaf0f72-c258-4f51-bdb8-e143ce03bcbe
+      nodeValues: []
+    - fullName: Get_Variable
+      uid: b23ba2e6-9c94-4796-b7cf-ced29c769c00
+      position: {x: 110.2828, y: -103.93634}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|e8669caa-607f-4e16-b5b5-be94132f1674
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: VRCSDK3StringLoadingVRCStringDownloader.__LoadUrl__VRCSDKBaseVRCUrl_VRCUdonCommonInterfacesIUdonEventReceiver__SystemVoid
+      uid: caaf0f72-c258-4f51-bdb8-e143ce03bcbe
+      position: {x: 375.2828, y: -224.93634}
+      nodeUIDs:
+      - b23ba2e6-9c94-4796-b7cf-ced29c769c00|0
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Event_OnStringLoadError
+      uid: 22ae4301-a6ee-4ff2-8b20-0ebd31049600
+      position: {x: 90.74901, y: 482}
+      nodeUIDs: []
+      flowUIDs:
+      - 7a2eee25-2e55-4ff7-832c-816090723f3c
+      nodeValues: []
+    - fullName: Event_OnStringLoadSuccess
+      uid: 035cbe0a-bc67-4183-b664-21b7fa48a8b9
+      position: {x: 113.68931, y: 125.76487}
+      nodeUIDs: []
+      flowUIDs:
+      - 663eb538-5def-4cbf-b916-6f02d9f267ac
+      nodeValues: []
+    - fullName: VRCSDK3StringLoadingIVRCStringDownload.__get_Result__SystemString
+      uid: d1f7c0e2-3135-43ee-a7f6-d06ddbfa460d
+      position: {x: 545.68933, y: 247.76486}
+      nodeUIDs:
+      - 035cbe0a-bc67-4183-b664-21b7fa48a8b9|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid
+      uid: 663eb538-5def-4cbf-b916-6f02d9f267ac
+      position: {x: 790.68933, y: 142.76486}
+      nodeUIDs:
+      - 4fc07511-923e-4c59-88e0-558c460d7e22|0
+      - d1f7c0e2-3135-43ee-a7f6-d06ddbfa460d|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Get_Variable
+      uid: 4fc07511-923e-4c59-88e0-558c460d7e22
+      position: {x: 514.68933, y: 64.76487}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|68692663-728a-4267-819b-e56b6db7cd27
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: VRCSDK3StringLoadingIVRCStringDownload.__get_ErrorCode__SystemInt32
+      uid: 47936f97-aa8e-437e-9c25-0cf3cf8a7712
+      position: {x: 401.749, y: 681}
+      nodeUIDs:
+      - 22ae4301-a6ee-4ff2-8b20-0ebd31049600|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: VRCSDK3StringLoadingIVRCStringDownload.__get_Error__SystemString
+      uid: e6ca317f-8397-4b74-ab32-35d61332fbf7
+      position: {x: 405.749, y: 579}
+      nodeUIDs:
+      - 22ae4301-a6ee-4ff2-8b20-0ebd31049600|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: SystemString.__op_Addition__SystemString_SystemString__SystemString
+      uid: 49940464-55b2-4887-b5c0-ae5051f6de18
+      position: {x: 678.749, y: 570}
+      nodeUIDs:
+      - e6ca317f-8397-4b74-ab32-35d61332fbf7|0
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: 'System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|Code d''erreur: '
+    - fullName: SystemConvert.__ToString__SystemInt32__SystemString
+      uid: ec2a2535-63aa-4247-9ab7-a2abe2d69639
+      position: {x: 684.749, y: 709}
+      nodeUIDs:
+      - 47936f97-aa8e-437e-9c25-0cf3cf8a7712|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+    - fullName: SystemString.__op_Addition__SystemString_SystemString__SystemString
+      uid: 6ed607d5-c83d-4066-a43d-b09ec7287cc7
+      position: {x: 963.749, y: 579}
+      nodeUIDs:
+      - 49940464-55b2-4887-b5c0-ae5051f6de18|0
+      - ec2a2535-63aa-4247-9ab7-a2abe2d69639|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
+      uid: 7a2eee25-2e55-4ff7-832c-816090723f3c
+      position: {x: 1144.749, y: 471}
+      nodeUIDs:
+      - 6ed607d5-c83d-4066-a43d-b09ec7287cc7|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    updateOrder: 0
+  graphElementData:
+  - type: 2
+    uid: e3c155e0-3f22-4b1c-85f3-af67dea48604
+    jsonData: "{\"uid\":\"e3c155e0-3f22-4b1c-85f3-af67dea48604\",\"layout\":{\"serializedVersion\":\"2\",\"x\":84.99996948242188,\"y\":-290.0,\"width\":490.0,\"height\":294.0},\"containedElements\":[\"caaf0f72-c258-4f51-bdb8-e143ce03bcbe\",\"b23ba2e6-9c94-4796-b7cf-ced29c769c00\",\"7ed699ff-56ff-46e4-87c8-a745f653ee16\"],\"title\":\"D\xE9marrage
+      du script\",\"layer\":-1,\"elementTypeColor\":{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":1.0}}"
+  - type: 2
+    uid: 97b8fd0e-57c6-41d0-9873-c99921dc0bba
+    jsonData: '{"uid":"97b8fd0e-57c6-41d0-9873-c99921dc0bba","layout":{"serializedVersion":"2","x":89.0,"y":8.00003433227539,"width":878.0,"height":348.0},"containedElements":["4fc07511-923e-4c59-88e0-558c460d7e22","663eb538-5def-4cbf-b916-6f02d9f267ac","d1f7c0e2-3135-43ee-a7f6-d06ddbfa460d","035cbe0a-bc67-4183-b664-21b7fa48a8b9"],"title":"Chargement
+      du texte","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
+  - type: 2
+    uid: 25c71997-3bf4-4016-b390-92260c9f7db9
+    jsonData: '{"uid":"25c71997-3bf4-4016-b390-92260c9f7db9","layout":{"serializedVersion":"2","x":66.00000762939453,"y":414.0,"width":1236.0,"height":422.0},"containedElements":["ec2a2535-63aa-4247-9ab7-a2abe2d69639","47936f97-aa8e-437e-9c25-0cf3cf8a7712","6ed607d5-c83d-4066-a43d-b09ec7287cc7","49940464-55b2-4887-b5c0-ae5051f6de18","e6ca317f-8397-4b74-ab32-35d61332fbf7","7a2eee25-2e55-4ff7-832c-816090723f3c","22ae4301-a6ee-4ff2-8b20-0ebd31049600"],"title":"En
+      cas d''erreur, log dans la console","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
+  version: 1.0.0
+  showAssembly: 0
