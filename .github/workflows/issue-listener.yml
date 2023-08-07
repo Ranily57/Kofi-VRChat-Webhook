@@ -31,6 +31,7 @@ jobs:
 
 
       - name: Close initial issue
-        run: gh issue close --comment "Auto-closing issue" ${{ github.event.issue.id }}
+        run: gh issue close --comment "Auto-closing issue" $ISSUE
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE: ${{ github.event.issue.html_url }}
