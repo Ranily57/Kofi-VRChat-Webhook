@@ -1,3 +1,6 @@
+# Ko-Fi to VRChat User List
+
+A automation system to receive donations and subscriptions from Ko-Fi and update a list of users and their contributions on VRChat.
 
 ## Authors
 
@@ -5,20 +8,17 @@ Created by [Spokeek](https://github.com/Alexandre-Belhomme) and [Ranily](https:/
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B3NGKMR)
 
+## 📁 Welcome to our Project
 
-
-
-# 📁 Welcome to our Project!
-
-## About
+### About
 
 This project includes two important files: `update-users.js` and a Github Action. Let's take a look at what each element does:
 
-### update-users.js
+#### update-users.js
 
 The `update-users.js` file is responsible for event management. It handles information related to donations and subscriptions received by our service. Specifically, it takes event data, such as the user's name and the amount given, and adds it to a list containing the users' names and their total contributions so far.
 
-### Github Action
+#### Github Action
 
 We've also included a Github Action, a small program that monitors opened issues in our project. When a new issue is opened, the action triggers the `Event.js` script to update our list of users and amounts based on the information provided in the issue.
 
