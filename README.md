@@ -6,11 +6,11 @@ Created by [Spokeek](https://github.com/Alexandre-Belhomme) and [Ranily](https:/
 
 ## About
 
-This project includes two important files: `Event.js` and a Github Action. Let's take a look at what each element does:
+This project includes two important files: `update-users.js` and a Github Action. Let's take a look at what each element does:
 
-### Event.js
+### update-users.js
 
-The `Event.js` file is responsible for event management. It handles information related to donations and subscriptions received by our service. Specifically, it takes event data, such as the user's name and the amount given, and adds it to a list containing the users' names and their total contributions so far.
+The `update-users.js` file is responsible for event management. It handles information related to donations and subscriptions received by our service. Specifically, it takes event data, such as the user's name and the amount given, and adds it to a list containing the users' names and their total contributions so far.
 
 ### Github Action
 
