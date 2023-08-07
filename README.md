@@ -20,8 +20,3 @@ Lorsqu'un nouvel événement est détecté (don ou abonnement), nous enregistron
 
 Nous avons tout automatisé grâce à Github Actions, ce qui signifie que le processus se déroule de manière transparente sans nécessiter d'intervention manuelle.
 
-## Comment participer ?
-
-Nous serions ravis de vous avoir à bord pour contribuer à notre projet ! Vous pouvez ouvrir de nouveaux problèmes (issues) si vous avez des suggestions, des idées ou si vous rencontrez des problèmes que vous aimeriez signaler. Vous pouvez également proposer des modifications, des améliorations ou envoyer des demandes d'extraction (pull requests) pour ajouter de nouvelles fonctionnalités.
-
-N'hésitez pas à partager vos commentaires et vos questions. Votre contribution est précieuse pour faire avancer notre projet !
