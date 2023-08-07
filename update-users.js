@@ -13,7 +13,9 @@ try {
         console.log("user added")
     }
     else {
-        console.log("nothing to add")
+        const index = userArray.findIndex(line => line[0] === event_json.name)
+        userArray[index][1] = event_json.amount + "€"
+        console.log("updated existing user")
     }
     console.log(userArray)
 
