@@ -6,6 +6,7 @@ You'll need to have those with you if you want to use this workflow:
 - An activate and fully functionnal Ko-Fi Account
 - An account on Zappier, please refer to the Zappier Button on the API section of Ko-Fi in your account settings
 - A public repository on Github for the text update
+- The UdonGraph (available on this repo) on your VRChat map with a text field to update
 
 ## Authors
 
