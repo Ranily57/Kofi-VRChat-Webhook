@@ -1,6 +1,12 @@
+
+## Authors
+
 Created by [Spokeek](https://github.com/Alexandre-Belhomme) and [Ranily](https://github.com/Ranily57)!
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B3NGKMR)
+
+
+
 
 # 📁 Welcome to our Project!
 
