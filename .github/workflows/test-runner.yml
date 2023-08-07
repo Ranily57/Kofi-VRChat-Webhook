@@ -9,7 +9,7 @@ on:
 
 
 jobs:
-    process_issue:
+    run_test:
         runs-on: ubuntu-latest
 
         steps:
