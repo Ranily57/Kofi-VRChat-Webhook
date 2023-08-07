@@ -3,11 +3,11 @@
 
 Created by [Spokeek](https://github.com/Alexandre-Belhomme) and [Ranily](https://github.com/Ranily57)!
 
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B3NGKMR)
 
- <img src="https://img.shields.io/npm/v/js?style=normal"/>
- <img src="https://img.shields.io/badge/License-GPL%20v3-brightgreen?style=normal"/>
- <img src="https://img.shields.io/github/languages/code-size/Ranily57/Kofi-VRChat-Webhook?logo=github&style=normal"/>
+
+ <img src="https://img.shields.io/badge/Ranily-Spokeek-blue"/><img src="https://img.shields.io/badge/License-GPL%20v3-brightgreen?style=normal"/><img src="https://img.shields.io/github/languages/code-size/Ranily57/Kofi-VRChat-Webhook?logo=github&style=normal"/>
 
 # 📁 Welcome to our Project!
 
