@@ -1,2 +1,2 @@
 Jo Example : 27.95
-Spookek : 1000
+Spookek : 5000
