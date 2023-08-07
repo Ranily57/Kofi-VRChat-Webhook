@@ -1,5 +1,7 @@
 Crée par [Spokeek](https://github.com/Alexandre-Belhomme) et [Ranily](https://github.com/Ranily57)!
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B3NGKMR)
+
 # 📁 Bienvenue dans notre projet !
 
 ## À propos
