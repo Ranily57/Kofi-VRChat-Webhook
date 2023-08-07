@@ -1,4 +1,4 @@
-// get content from first argument
+// Created by Spokeek and edit by Ranily
 const event_raw = process.env.EVENT_RAW;
 const fs = require('fs')
 
