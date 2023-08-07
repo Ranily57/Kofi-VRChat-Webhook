@@ -19,7 +19,7 @@ jobs:
 
       - name: Get Issue Body
         id: issue_body
-        run: echo "::set-output name=body::${{ github.event.issue.body }}"
+        run: echo "event :${{ github.event.issue.body }}"
 
       - name: Update Users List
         run: node update-users.js ${{ steps.issue_body.outputs.body }}
