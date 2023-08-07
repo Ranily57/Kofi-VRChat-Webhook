@@ -12,7 +12,7 @@ const TEST_DATA_FILE = "./test-data.txt"
 const EVENT_1 = {
     "name": "user_test_1",
     "amount": "3",
-    "type": "donation"
+    "type": "Donation"
 }
 const EXPECT_EVENT_1 = [
     ["user_test_1", "3€"]
@@ -22,7 +22,7 @@ const EXPECT_EVENT_1 = [
 const EVENT_2 = {
     "name": "user_test_1",
     "amount": "5",
-    "type": "donation"
+    "type": "Donation"
 }
 const EXPECT_EVENT_2 = [
     ["user_test_1", "5€"]
@@ -32,7 +32,7 @@ const EXPECT_EVENT_2 = [
 const EVENT_3 = {
     "name": "user_test_2",
     "amount": "1",
-    "type": "subscription"
+    "type": "Subscription"
 }
 const EXPECT_EVENT_3 = [
     ["user_test_1", "5€"],
@@ -79,6 +79,8 @@ for (group of EVENTS) {
     }
     console.log("event " + groupIndex + " passed")
 }
+
+console.log("all tests passed")
 
 // remove data file
 try {

@@ -1,0 +1,20 @@
+name: Test Runner
+
+on:
+    push:
+      paths:
+      - '.github/*'
+      - 'update-users.js'
+      - 'update-users.test.js'
+
+
+jobs:
+    process_issue:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
+
+        - name: Run test
+          run: node update-users.test.js
