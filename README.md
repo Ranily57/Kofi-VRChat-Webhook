@@ -1,4 +1,4 @@
-[![Issue Listener](https://github.com/Ranily57/Kofi-VRChat-Webhook/actions/workflows/issue-listener.yml/badge.svg)](https://github.com/Ranily57/Kofi-VRChat-Webhook/actions/workflows/issue-listener.yml)
+[![Issue Listener](https://github.com/Ranily57/Kofi-VRChat-Webhook/actions/workflows/issue-listener.yml/badge.svg?branch=main)](https://github.com/Ranily57/Kofi-VRChat-Webhook/actions/workflows/issue-listener.yml)
 # Ko-Fi to VRChat User List
 
 A automation system to receive donations and subscriptions from Ko-Fi and update a list of users and their contributions on VRChat.
