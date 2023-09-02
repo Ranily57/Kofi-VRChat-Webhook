@@ -3,3 +3,4 @@ Jaoul : 5.00€/mois
 Tom_Phoenix : 5.00€/mois + 15€
 Nittch : 3.00€/mois
 Tom Phoenix : 6.00€/mois
+GodEater : 6.00€/mois
