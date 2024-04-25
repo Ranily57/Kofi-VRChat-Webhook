@@ -1,6 +1,8 @@
 [![Issue Listener](https://github.com/Ranily57/Kofi-VRChat-Webhook/actions/workflows/issue-listener.yml/badge.svg?branch=main)](https://github.com/Ranily57/Kofi-VRChat-Webhook/actions/workflows/issue-listener.yml)
 # Ko-Fi to VRChat User List
 
+⚠️This script is in **French**, don't forget to translate into your language ! Change `update-users.js`, `Text_Downloader.asset` and `vrchat-kofi-users.txt` to your actual language and currency.
+
 A automation system to receive donations and subscriptions from Ko-Fi and update a list of users and their contributions on VRChat.
 
 You'll need to have those with you if you want to use this workflow: 
